@@ -13,10 +13,6 @@ You paste raw SKUs from a spreadsheet or system export, and the tool:
 - Shows warnings when something cannot be interpreted
 - Lets you download a clean CSV of the results
 
-This is designed as a demo of practical data cleaning for production and operations work (print shops, e-commerce, inventory systems, etc.), but the rules are easy to adapt.
-
----
-
 ## Features
 
 - Runs entirely in the browser (static site, no backend)
