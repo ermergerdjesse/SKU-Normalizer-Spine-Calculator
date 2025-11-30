@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SKU Normalizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <h1>SKU Normalizer</h1>
+      <p class="subtitle">
+        Paste raw SKUs, normalize them, and export a clean CSV.
+      </p>
+    </header>
+
+    <main class="app-main">
+      <section class="card input-card">
+        <h2>Input</h2>
+        <p class="help-text">
+          Paste one SKU per line. Whitespace is ignored. Example:
+        </p>
+        <pre class="example">
+au1010625-gun
+AU 825X11 honeycomb
+Card_10x10_gold_foldnone
+        </pre>
+
+        <textarea
+          id="skuInput"
+          class="sku-input"
+          rows="10"
+          placeholder="Paste SKUs here, one per line..."
+        ></textarea>
+
+        <div class="controls">
+          <button id="normalizeBtn" class="btn primary">Normalize SKUs</button>
+          <button id="clearBtn" class="btn ghost">Clear</button>
+        </div>
+      </section>
+
+      <section class="card output-card">
+        <div class="output-header">
+          <h2>Results</h2>
+          <button id="downloadBtn" class="btn small" disabled>Download CSV</button>
+        </div>
+        <div id="resultsContainer" class="results-container">
+          <p class="empty-state">No results yet. Normalize some SKUs to see output.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span>Built as a sample data cleaning tool.</span>
+      <span class="dot">•</span>
+      <a href="https://github.com/YOUR_USERNAME/sku-normalizer" target="_blank" rel="noreferrer">
+        View on GitHub
+      </a>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
